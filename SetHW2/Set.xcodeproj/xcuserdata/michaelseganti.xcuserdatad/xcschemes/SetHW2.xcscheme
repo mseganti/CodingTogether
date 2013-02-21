@@ -17,7 +17,7 @@
                BlueprintIdentifier = "BF592DD116B9EF3B006B5084"
                BuildableName = "SetHW2.app"
                BlueprintName = "SetHW2"
-               ReferencedContainer = "container:SetHW2.xcodeproj">
+               ReferencedContainer = "container:Set.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
             BlueprintIdentifier = "BF592DD116B9EF3B006B5084"
             BuildableName = "SetHW2.app"
             BlueprintName = "SetHW2"
-            ReferencedContainer = "container:SetHW2.xcodeproj">
+            ReferencedContainer = "container:Set.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -54,7 +54,7 @@
             BlueprintIdentifier = "BF592DD116B9EF3B006B5084"
             BuildableName = "SetHW2.app"
             BlueprintName = "SetHW2"
-            ReferencedContainer = "container:SetHW2.xcodeproj">
+            ReferencedContainer = "container:Set.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -72,7 +72,7 @@
             BlueprintIdentifier = "BF592DD116B9EF3B006B5084"
             BuildableName = "SetHW2.app"
             BlueprintName = "SetHW2"
-            ReferencedContainer = "container:SetHW2.xcodeproj">
+            ReferencedContainer = "container:Set.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

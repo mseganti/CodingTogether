@@ -9,6 +9,7 @@
 #import "CardGameViewController.h"
 #import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
+#import "GameResult.h"
 
 @interface CardGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
@@ -18,9 +19,16 @@
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
 @property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *gameSelector;
+@property (strong, nonatomic) GameResult *gameResult;
 @end
 
 @implementation CardGameViewController
+
+- (GameResult *)gameResult
+{
+    if (!_gameResult) _gameResult = [[GameResult alloc] init];
+    return _gameResult;
+}
 
 - (CardMatchingGame *)game
 {
@@ -67,6 +75,7 @@
     }
     
     [self updateUI];
+    self.gameResult.score = self.game.score;
 }
 
 // Deal Button Action to reset the game
@@ -74,6 +83,7 @@
 {
     self.game = nil;
     self.flipCount = 0;
+    self.gameResult = nil;
     
     // Enable the UISegmentedControl here
     if (!self.gameSelector.userInteractionEnabled) {

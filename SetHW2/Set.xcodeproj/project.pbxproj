@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF1DCBF016D594AA0067D44E /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1DCBEF16D594AA0067D44E /* GameResultViewController.m */; };
+		BF1DCBF316D5999F0067D44E /* GameResult.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1DCBF216D5999F0067D44E /* GameResult.m */; };
+		BF221A9816CB099C0008DA0A /* SetGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF221A9716CB099C0008DA0A /* SetGameViewController.m */; };
+		BF221A9A16CB11970008DA0A /* DeckofCards.png in Resources */ = {isa = PBXBuildFile; fileRef = BF221A9916CB11970008DA0A /* DeckofCards.png */; };
 		BF592DD616B9EF3B006B5084 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF592DD516B9EF3B006B5084 /* UIKit.framework */; };
 		BF592DD816B9EF3B006B5084 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF592DD716B9EF3B006B5084 /* Foundation.framework */; };
 		BF592DDA16B9EF3B006B5084 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF592DD916B9EF3B006B5084 /* CoreGraphics.framework */; };
@@ -26,6 +30,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF1DCBEE16D594AA0067D44E /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
+		BF1DCBEF16D594AA0067D44E /* GameResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResultViewController.m; sourceTree = "<group>"; };
+		BF1DCBF116D5999F0067D44E /* GameResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResult.h; sourceTree = "<group>"; };
+		BF1DCBF216D5999F0067D44E /* GameResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResult.m; sourceTree = "<group>"; };
+		BF221A9616CB099C0008DA0A /* SetGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SetGameViewController.h; sourceTree = "<group>"; };
+		BF221A9716CB099C0008DA0A /* SetGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SetGameViewController.m; sourceTree = "<group>"; };
+		BF221A9916CB11970008DA0A /* DeckofCards.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DeckofCards.png; sourceTree = "<group>"; };
 		BF592DD216B9EF3B006B5084 /* SetHW2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SetHW2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF592DD516B9EF3B006B5084 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BF592DD716B9EF3B006B5084 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -99,8 +110,14 @@
 			isa = PBXGroup;
 			children = (
 				BF592DED16B9EF3B006B5084 /* MainStoryboard.storyboard */,
+				BF1DCBF116D5999F0067D44E /* GameResult.h */,
+				BF1DCBF216D5999F0067D44E /* GameResult.m */,
+				BF1DCBEE16D594AA0067D44E /* GameResultViewController.h */,
+				BF1DCBEF16D594AA0067D44E /* GameResultViewController.m */,
 				BF592DF016B9EF3B006B5084 /* CardGameViewController.h */,
 				BF592DF116B9EF3B006B5084 /* CardGameViewController.m */,
+				BF221A9616CB099C0008DA0A /* SetGameViewController.h */,
+				BF221A9716CB099C0008DA0A /* SetGameViewController.m */,
 				BF592DF816B9F01A006B5084 /* Model */,
 				BF592DDC16B9EF3B006B5084 /* Supporting Files */,
 			);
@@ -115,6 +132,7 @@
 				BF592DDD16B9EF3B006B5084 /* SetHW2-Info.plist */,
 				BF592DDE16B9EF3B006B5084 /* InfoPlist.strings */,
 				BF592DE116B9EF3B006B5084 /* main.m */,
+				BF221A9916CB11970008DA0A /* DeckofCards.png */,
 				BF592DE316B9EF3B006B5084 /* SetHW2-Prefix.pch */,
 				BF592DE716B9EF3B006B5084 /* Default.png */,
 				BF592DE916B9EF3B006B5084 /* Default@2x.png */,
@@ -170,7 +188,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Michael Seganti";
 			};
-			buildConfigurationList = BF592DCD16B9EF3B006B5084 /* Build configuration list for PBXProject "SetHW2" */;
+			buildConfigurationList = BF592DCD16B9EF3B006B5084 /* Build configuration list for PBXProject "Set" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -197,6 +215,7 @@
 				BF592DEA16B9EF3B006B5084 /* Default@2x.png in Resources */,
 				BF592DEC16B9EF3B006B5084 /* Default-568h@2x.png in Resources */,
 				BF592DEF16B9EF3B006B5084 /* MainStoryboard.storyboard in Resources */,
+				BF221A9A16CB11970008DA0A /* DeckofCards.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +234,9 @@
 				BF592E0316B9F06A006B5084 /* PlayingCard.m in Sources */,
 				BF592E0416B9F06A006B5084 /* PlayingCardDeck.m in Sources */,
 				BF592E0716B9F6B4006B5084 /* CardMatchingGame.m in Sources */,
+				BF221A9816CB099C0008DA0A /* SetGameViewController.m in Sources */,
+				BF1DCBF016D594AA0067D44E /* GameResultViewController.m in Sources */,
+				BF1DCBF316D5999F0067D44E /* GameResult.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +343,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BF592DCD16B9EF3B006B5084 /* Build configuration list for PBXProject "SetHW2" */ = {
+		BF592DCD16B9EF3B006B5084 /* Build configuration list for PBXProject "Set" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BF592DF316B9EF3B006B5084 /* Debug */,
