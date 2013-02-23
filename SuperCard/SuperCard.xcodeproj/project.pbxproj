@@ -1,0 +1,480 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFF3E8EF16D91A09007E918E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF3E8EE16D91A09007E918E /* UIKit.framework */; };
+		BFF3E8F116D91A09007E918E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF3E8F016D91A09007E918E /* Foundation.framework */; };
+		BFF3E8F316D91A09007E918E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFF3E8F216D91A09007E918E /* CoreGraphics.framework */; };
+		BFF3E8F916D91A09007E918E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E8F716D91A09007E918E /* InfoPlist.strings */; };
+		BFF3E8FB16D91A09007E918E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E8FA16D91A09007E918E /* main.m */; };
+		BFF3E8FF16D91A09007E918E /* SuperCardAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E8FE16D91A09007E918E /* SuperCardAppDelegate.m */; };
+		BFF3E90116D91A09007E918E /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E90016D91A09007E918E /* Default.png */; };
+		BFF3E90316D91A09007E918E /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E90216D91A09007E918E /* Default@2x.png */; };
+		BFF3E90516D91A09007E918E /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E90416D91A09007E918E /* Default-568h@2x.png */; };
+		BFF3E90816D91A09007E918E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E90616D91A09007E918E /* MainStoryboard.storyboard */; };
+		BFF3E90B16D91A09007E918E /* SuperCardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E90A16D91A09007E918E /* SuperCardViewController.m */; };
+		BFF3E91316D91A40007E918E /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E91216D91A40007E918E /* PlayingCardView.m */; };
+		BFF3E93416D93070007E918E /* J♠.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91616D93070007E918E /* J♠.png */; };
+		BFF3E93516D93070007E918E /* J♠@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91716D93070007E918E /* J♠@2x.png */; };
+		BFF3E93616D93070007E918E /* J♣.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91816D93070007E918E /* J♣.png */; };
+		BFF3E93716D93070007E918E /* J♣@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91916D93070007E918E /* J♣@2x.png */; };
+		BFF3E93816D93070007E918E /* J♥.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91A16D93070007E918E /* J♥.png */; };
+		BFF3E93916D93070007E918E /* J♥@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91B16D93070007E918E /* J♥@2x.png */; };
+		BFF3E93A16D93070007E918E /* J♦.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91C16D93070007E918E /* J♦.png */; };
+		BFF3E93B16D93070007E918E /* J♦@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91D16D93070007E918E /* J♦@2x.png */; };
+		BFF3E93C16D93070007E918E /* K♠.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91E16D93070007E918E /* K♠.png */; };
+		BFF3E93D16D93070007E918E /* K♠@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E91F16D93070007E918E /* K♠@2x.png */; };
+		BFF3E93E16D93070007E918E /* K♣.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92016D93070007E918E /* K♣.png */; };
+		BFF3E93F16D93070007E918E /* K♣@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92116D93070007E918E /* K♣@2x.png */; };
+		BFF3E94016D93070007E918E /* K♥.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92216D93070007E918E /* K♥.png */; };
+		BFF3E94116D93070007E918E /* K♥@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92316D93070007E918E /* K♥@2x.png */; };
+		BFF3E94216D93070007E918E /* K♦.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92416D93070007E918E /* K♦.png */; };
+		BFF3E94316D93070007E918E /* K♦@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92516D93070007E918E /* K♦@2x.png */; };
+		BFF3E94416D93070007E918E /* Q♠.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92616D93070007E918E /* Q♠.png */; };
+		BFF3E94516D93070007E918E /* Q♠@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92716D93070007E918E /* Q♠@2x.png */; };
+		BFF3E94616D93070007E918E /* Q♣.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92816D93070007E918E /* Q♣.png */; };
+		BFF3E94716D93070007E918E /* Q♣@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92916D93070007E918E /* Q♣@2x.png */; };
+		BFF3E94816D93070007E918E /* Q♥.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92A16D93070007E918E /* Q♥.png */; };
+		BFF3E94916D93070007E918E /* Q♥@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92B16D93070007E918E /* Q♥@2x.png */; };
+		BFF3E94A16D93070007E918E /* Q♦.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92C16D93070007E918E /* Q♦.png */; };
+		BFF3E94B16D93070007E918E /* Q♦@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92D16D93070007E918E /* Q♦@2x.png */; };
+		BFF3E94C16D93070007E918E /* playingCardBackBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92E16D93070007E918E /* playingCardBackBlue.png */; };
+		BFF3E94D16D93070007E918E /* playingCardBackBlue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E92F16D93070007E918E /* playingCardBackBlue@2x.png */; };
+		BFF3E94E16D93070007E918E /* playingCardBackRed.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E93016D93070007E918E /* playingCardBackRed.png */; };
+		BFF3E94F16D93070007E918E /* playingCardBackRed@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E93116D93070007E918E /* playingCardBackRed@2x.png */; };
+		BFF3E95016D93070007E918E /* tableBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E93216D93070007E918E /* tableBackground.png */; };
+		BFF3E95116D93070007E918E /* tableBackground@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFF3E93316D93070007E918E /* tableBackground@2x.png */; };
+		BFF3E95B16D9445C007E918E /* Card.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E95416D9445C007E918E /* Card.m */; };
+		BFF3E95C16D9445C007E918E /* Deck.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E95616D9445C007E918E /* Deck.m */; };
+		BFF3E95D16D9445C007E918E /* PlayingCard.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E95816D9445C007E918E /* PlayingCard.m */; };
+		BFF3E95E16D9445C007E918E /* PlayingCardDeck.m in Sources */ = {isa = PBXBuildFile; fileRef = BFF3E95A16D9445C007E918E /* PlayingCardDeck.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFF3E8EB16D91A09007E918E /* SuperCard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SuperCard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFF3E8EE16D91A09007E918E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BFF3E8F016D91A09007E918E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BFF3E8F216D91A09007E918E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BFF3E8F616D91A09007E918E /* SuperCard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SuperCard-Info.plist"; sourceTree = "<group>"; };
+		BFF3E8F816D91A09007E918E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFF3E8FA16D91A09007E918E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFF3E8FC16D91A09007E918E /* SuperCard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SuperCard-Prefix.pch"; sourceTree = "<group>"; };
+		BFF3E8FD16D91A09007E918E /* SuperCardAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperCardAppDelegate.h; sourceTree = "<group>"; };
+		BFF3E8FE16D91A09007E918E /* SuperCardAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCardAppDelegate.m; sourceTree = "<group>"; };
+		BFF3E90016D91A09007E918E /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BFF3E90216D91A09007E918E /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BFF3E90416D91A09007E918E /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BFF3E90716D91A09007E918E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BFF3E90916D91A09007E918E /* SuperCardViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SuperCardViewController.h; sourceTree = "<group>"; };
+		BFF3E90A16D91A09007E918E /* SuperCardViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SuperCardViewController.m; sourceTree = "<group>"; };
+		BFF3E91116D91A40007E918E /* PlayingCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
+		BFF3E91216D91A40007E918E /* PlayingCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
+		BFF3E91616D93070007E918E /* J♠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J♠.png"; sourceTree = "<group>"; };
+		BFF3E91716D93070007E918E /* J♠@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J♠@2x.png"; sourceTree = "<group>"; };
+		BFF3E91816D93070007E918E /* J♣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J♣.png"; sourceTree = "<group>"; };
+		BFF3E91916D93070007E918E /* J♣@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J♣@2x.png"; sourceTree = "<group>"; };
+		BFF3E91A16D93070007E918E /* J♥.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J♥.png"; sourceTree = "<group>"; };
+		BFF3E91B16D93070007E918E /* J♥@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J♥@2x.png"; sourceTree = "<group>"; };
+		BFF3E91C16D93070007E918E /* J♦.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J♦.png"; sourceTree = "<group>"; };
+		BFF3E91D16D93070007E918E /* J♦@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "J♦@2x.png"; sourceTree = "<group>"; };
+		BFF3E91E16D93070007E918E /* K♠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K♠.png"; sourceTree = "<group>"; };
+		BFF3E91F16D93070007E918E /* K♠@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K♠@2x.png"; sourceTree = "<group>"; };
+		BFF3E92016D93070007E918E /* K♣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K♣.png"; sourceTree = "<group>"; };
+		BFF3E92116D93070007E918E /* K♣@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K♣@2x.png"; sourceTree = "<group>"; };
+		BFF3E92216D93070007E918E /* K♥.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K♥.png"; sourceTree = "<group>"; };
+		BFF3E92316D93070007E918E /* K♥@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K♥@2x.png"; sourceTree = "<group>"; };
+		BFF3E92416D93070007E918E /* K♦.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K♦.png"; sourceTree = "<group>"; };
+		BFF3E92516D93070007E918E /* K♦@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "K♦@2x.png"; sourceTree = "<group>"; };
+		BFF3E92616D93070007E918E /* Q♠.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Q♠.png"; sourceTree = "<group>"; };
+		BFF3E92716D93070007E918E /* Q♠@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Q♠@2x.png"; sourceTree = "<group>"; };
+		BFF3E92816D93070007E918E /* Q♣.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Q♣.png"; sourceTree = "<group>"; };
+		BFF3E92916D93070007E918E /* Q♣@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Q♣@2x.png"; sourceTree = "<group>"; };
+		BFF3E92A16D93070007E918E /* Q♥.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Q♥.png"; sourceTree = "<group>"; };
+		BFF3E92B16D93070007E918E /* Q♥@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Q♥@2x.png"; sourceTree = "<group>"; };
+		BFF3E92C16D93070007E918E /* Q♦.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Q♦.png"; sourceTree = "<group>"; };
+		BFF3E92D16D93070007E918E /* Q♦@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Q♦@2x.png"; sourceTree = "<group>"; };
+		BFF3E92E16D93070007E918E /* playingCardBackBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playingCardBackBlue.png; sourceTree = "<group>"; };
+		BFF3E92F16D93070007E918E /* playingCardBackBlue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playingCardBackBlue@2x.png"; sourceTree = "<group>"; };
+		BFF3E93016D93070007E918E /* playingCardBackRed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = playingCardBackRed.png; sourceTree = "<group>"; };
+		BFF3E93116D93070007E918E /* playingCardBackRed@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "playingCardBackRed@2x.png"; sourceTree = "<group>"; };
+		BFF3E93216D93070007E918E /* tableBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tableBackground.png; sourceTree = "<group>"; };
+		BFF3E93316D93070007E918E /* tableBackground@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tableBackground@2x.png"; sourceTree = "<group>"; };
+		BFF3E95316D9445C007E918E /* Card.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Card.h; sourceTree = "<group>"; };
+		BFF3E95416D9445C007E918E /* Card.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Card.m; sourceTree = "<group>"; };
+		BFF3E95516D9445C007E918E /* Deck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Deck.h; sourceTree = "<group>"; };
+		BFF3E95616D9445C007E918E /* Deck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Deck.m; sourceTree = "<group>"; };
+		BFF3E95716D9445C007E918E /* PlayingCard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCard.h; sourceTree = "<group>"; };
+		BFF3E95816D9445C007E918E /* PlayingCard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCard.m; sourceTree = "<group>"; };
+		BFF3E95916D9445C007E918E /* PlayingCardDeck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlayingCardDeck.h; sourceTree = "<group>"; };
+		BFF3E95A16D9445C007E918E /* PlayingCardDeck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlayingCardDeck.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFF3E8E816D91A09007E918E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF3E8EF16D91A09007E918E /* UIKit.framework in Frameworks */,
+				BFF3E8F116D91A09007E918E /* Foundation.framework in Frameworks */,
+				BFF3E8F316D91A09007E918E /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFF3E8E216D91A09007E918E = {
+			isa = PBXGroup;
+			children = (
+				BFF3E8F416D91A09007E918E /* SuperCard */,
+				BFF3E8ED16D91A09007E918E /* Frameworks */,
+				BFF3E8EC16D91A09007E918E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFF3E8EC16D91A09007E918E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3E8EB16D91A09007E918E /* SuperCard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFF3E8ED16D91A09007E918E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3E8EE16D91A09007E918E /* UIKit.framework */,
+				BFF3E8F016D91A09007E918E /* Foundation.framework */,
+				BFF3E8F216D91A09007E918E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFF3E8F416D91A09007E918E /* SuperCard */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3E95216D9445C007E918E /* Model */,
+				BFF3E91116D91A40007E918E /* PlayingCardView.h */,
+				BFF3E91216D91A40007E918E /* PlayingCardView.m */,
+				BFF3E8FD16D91A09007E918E /* SuperCardAppDelegate.h */,
+				BFF3E8FE16D91A09007E918E /* SuperCardAppDelegate.m */,
+				BFF3E90616D91A09007E918E /* MainStoryboard.storyboard */,
+				BFF3E90916D91A09007E918E /* SuperCardViewController.h */,
+				BFF3E90A16D91A09007E918E /* SuperCardViewController.m */,
+				BFF3E8F516D91A09007E918E /* Supporting Files */,
+			);
+			path = SuperCard;
+			sourceTree = "<group>";
+		};
+		BFF3E8F516D91A09007E918E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3E91416D93070007E918E /* CardImages */,
+				BFF3E8F616D91A09007E918E /* SuperCard-Info.plist */,
+				BFF3E8F716D91A09007E918E /* InfoPlist.strings */,
+				BFF3E8FA16D91A09007E918E /* main.m */,
+				BFF3E8FC16D91A09007E918E /* SuperCard-Prefix.pch */,
+				BFF3E90016D91A09007E918E /* Default.png */,
+				BFF3E90216D91A09007E918E /* Default@2x.png */,
+				BFF3E90416D91A09007E918E /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFF3E91416D93070007E918E /* CardImages */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3E91516D93070007E918E /* FaceCards */,
+				BFF3E92E16D93070007E918E /* playingCardBackBlue.png */,
+				BFF3E92F16D93070007E918E /* playingCardBackBlue@2x.png */,
+				BFF3E93016D93070007E918E /* playingCardBackRed.png */,
+				BFF3E93116D93070007E918E /* playingCardBackRed@2x.png */,
+				BFF3E93216D93070007E918E /* tableBackground.png */,
+				BFF3E93316D93070007E918E /* tableBackground@2x.png */,
+			);
+			path = CardImages;
+			sourceTree = "<group>";
+		};
+		BFF3E91516D93070007E918E /* FaceCards */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3E91616D93070007E918E /* J♠.png */,
+				BFF3E91716D93070007E918E /* J♠@2x.png */,
+				BFF3E91816D93070007E918E /* J♣.png */,
+				BFF3E91916D93070007E918E /* J♣@2x.png */,
+				BFF3E91A16D93070007E918E /* J♥.png */,
+				BFF3E91B16D93070007E918E /* J♥@2x.png */,
+				BFF3E91C16D93070007E918E /* J♦.png */,
+				BFF3E91D16D93070007E918E /* J♦@2x.png */,
+				BFF3E91E16D93070007E918E /* K♠.png */,
+				BFF3E91F16D93070007E918E /* K♠@2x.png */,
+				BFF3E92016D93070007E918E /* K♣.png */,
+				BFF3E92116D93070007E918E /* K♣@2x.png */,
+				BFF3E92216D93070007E918E /* K♥.png */,
+				BFF3E92316D93070007E918E /* K♥@2x.png */,
+				BFF3E92416D93070007E918E /* K♦.png */,
+				BFF3E92516D93070007E918E /* K♦@2x.png */,
+				BFF3E92616D93070007E918E /* Q♠.png */,
+				BFF3E92716D93070007E918E /* Q♠@2x.png */,
+				BFF3E92816D93070007E918E /* Q♣.png */,
+				BFF3E92916D93070007E918E /* Q♣@2x.png */,
+				BFF3E92A16D93070007E918E /* Q♥.png */,
+				BFF3E92B16D93070007E918E /* Q♥@2x.png */,
+				BFF3E92C16D93070007E918E /* Q♦.png */,
+				BFF3E92D16D93070007E918E /* Q♦@2x.png */,
+			);
+			path = FaceCards;
+			sourceTree = "<group>";
+		};
+		BFF3E95216D9445C007E918E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFF3E95316D9445C007E918E /* Card.h */,
+				BFF3E95416D9445C007E918E /* Card.m */,
+				BFF3E95516D9445C007E918E /* Deck.h */,
+				BFF3E95616D9445C007E918E /* Deck.m */,
+				BFF3E95716D9445C007E918E /* PlayingCard.h */,
+				BFF3E95816D9445C007E918E /* PlayingCard.m */,
+				BFF3E95916D9445C007E918E /* PlayingCardDeck.h */,
+				BFF3E95A16D9445C007E918E /* PlayingCardDeck.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFF3E8EA16D91A09007E918E /* SuperCard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFF3E90E16D91A09007E918E /* Build configuration list for PBXNativeTarget "SuperCard" */;
+			buildPhases = (
+				BFF3E8E716D91A09007E918E /* Sources */,
+				BFF3E8E816D91A09007E918E /* Frameworks */,
+				BFF3E8E916D91A09007E918E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SuperCard;
+			productName = SuperCard;
+			productReference = BFF3E8EB16D91A09007E918E /* SuperCard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFF3E8E316D91A09007E918E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SuperCard;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Michael Seganti";
+			};
+			buildConfigurationList = BFF3E8E616D91A09007E918E /* Build configuration list for PBXProject "SuperCard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFF3E8E216D91A09007E918E;
+			productRefGroup = BFF3E8EC16D91A09007E918E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFF3E8EA16D91A09007E918E /* SuperCard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFF3E8E916D91A09007E918E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF3E8F916D91A09007E918E /* InfoPlist.strings in Resources */,
+				BFF3E90116D91A09007E918E /* Default.png in Resources */,
+				BFF3E90316D91A09007E918E /* Default@2x.png in Resources */,
+				BFF3E90516D91A09007E918E /* Default-568h@2x.png in Resources */,
+				BFF3E90816D91A09007E918E /* MainStoryboard.storyboard in Resources */,
+				BFF3E93416D93070007E918E /* J♠.png in Resources */,
+				BFF3E93516D93070007E918E /* J♠@2x.png in Resources */,
+				BFF3E93616D93070007E918E /* J♣.png in Resources */,
+				BFF3E93716D93070007E918E /* J♣@2x.png in Resources */,
+				BFF3E93816D93070007E918E /* J♥.png in Resources */,
+				BFF3E93916D93070007E918E /* J♥@2x.png in Resources */,
+				BFF3E93A16D93070007E918E /* J♦.png in Resources */,
+				BFF3E93B16D93070007E918E /* J♦@2x.png in Resources */,
+				BFF3E93C16D93070007E918E /* K♠.png in Resources */,
+				BFF3E93D16D93070007E918E /* K♠@2x.png in Resources */,
+				BFF3E93E16D93070007E918E /* K♣.png in Resources */,
+				BFF3E93F16D93070007E918E /* K♣@2x.png in Resources */,
+				BFF3E94016D93070007E918E /* K♥.png in Resources */,
+				BFF3E94116D93070007E918E /* K♥@2x.png in Resources */,
+				BFF3E94216D93070007E918E /* K♦.png in Resources */,
+				BFF3E94316D93070007E918E /* K♦@2x.png in Resources */,
+				BFF3E94416D93070007E918E /* Q♠.png in Resources */,
+				BFF3E94516D93070007E918E /* Q♠@2x.png in Resources */,
+				BFF3E94616D93070007E918E /* Q♣.png in Resources */,
+				BFF3E94716D93070007E918E /* Q♣@2x.png in Resources */,
+				BFF3E94816D93070007E918E /* Q♥.png in Resources */,
+				BFF3E94916D93070007E918E /* Q♥@2x.png in Resources */,
+				BFF3E94A16D93070007E918E /* Q♦.png in Resources */,
+				BFF3E94B16D93070007E918E /* Q♦@2x.png in Resources */,
+				BFF3E94C16D93070007E918E /* playingCardBackBlue.png in Resources */,
+				BFF3E94D16D93070007E918E /* playingCardBackBlue@2x.png in Resources */,
+				BFF3E94E16D93070007E918E /* playingCardBackRed.png in Resources */,
+				BFF3E94F16D93070007E918E /* playingCardBackRed@2x.png in Resources */,
+				BFF3E95016D93070007E918E /* tableBackground.png in Resources */,
+				BFF3E95116D93070007E918E /* tableBackground@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFF3E8E716D91A09007E918E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFF3E8FB16D91A09007E918E /* main.m in Sources */,
+				BFF3E8FF16D91A09007E918E /* SuperCardAppDelegate.m in Sources */,
+				BFF3E90B16D91A09007E918E /* SuperCardViewController.m in Sources */,
+				BFF3E91316D91A40007E918E /* PlayingCardView.m in Sources */,
+				BFF3E95B16D9445C007E918E /* Card.m in Sources */,
+				BFF3E95C16D9445C007E918E /* Deck.m in Sources */,
+				BFF3E95D16D9445C007E918E /* PlayingCard.m in Sources */,
+				BFF3E95E16D9445C007E918E /* PlayingCardDeck.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFF3E8F716D91A09007E918E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFF3E8F816D91A09007E918E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BFF3E90616D91A09007E918E /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFF3E90716D91A09007E918E /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFF3E90C16D91A09007E918E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BFF3E90D16D91A09007E918E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFF3E90F16D91A09007E918E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperCard/SuperCard-Prefix.pch";
+				INFOPLIST_FILE = "SuperCard/SuperCard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BFF3E91016D91A09007E918E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SuperCard/SuperCard-Prefix.pch";
+				INFOPLIST_FILE = "SuperCard/SuperCard-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFF3E8E616D91A09007E918E /* Build configuration list for PBXProject "SuperCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF3E90C16D91A09007E918E /* Debug */,
+				BFF3E90D16D91A09007E918E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFF3E90E16D91A09007E918E /* Build configuration list for PBXNativeTarget "SuperCard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFF3E90F16D91A09007E918E /* Debug */,
+				BFF3E91016D91A09007E918E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFF3E8E316D91A09007E918E /* Project object */;
+}
