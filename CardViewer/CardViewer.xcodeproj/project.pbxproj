@@ -1,0 +1,376 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BFA3D1A616DD974F00908C37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA3D1A516DD974F00908C37 /* UIKit.framework */; };
+		BFA3D1A816DD974F00908C37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA3D1A716DD974F00908C37 /* Foundation.framework */; };
+		BFA3D1AA16DD974F00908C37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA3D1A916DD974F00908C37 /* CoreGraphics.framework */; };
+		BFA3D1B016DD974F00908C37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BFA3D1AE16DD974F00908C37 /* InfoPlist.strings */; };
+		BFA3D1B216DD974F00908C37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3D1B116DD974F00908C37 /* main.m */; };
+		BFA3D1B616DD974F00908C37 /* CardChooserAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3D1B516DD974F00908C37 /* CardChooserAppDelegate.m */; };
+		BFA3D1B816DD974F00908C37 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA3D1B716DD974F00908C37 /* Default.png */; };
+		BFA3D1BA16DD974F00908C37 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA3D1B916DD974F00908C37 /* Default@2x.png */; };
+		BFA3D1BC16DD975000908C37 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BFA3D1BB16DD975000908C37 /* Default-568h@2x.png */; };
+		BFA3D1BF16DD975000908C37 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFA3D1BD16DD975000908C37 /* MainStoryboard.storyboard */; };
+		BFA3D1C216DD975000908C37 /* CardChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3D1C116DD975000908C37 /* CardChooserViewController.m */; };
+		BFA3D1CA16DD98F900908C37 /* CardDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3D1C916DD98F900908C37 /* CardDisplayViewController.m */; };
+		BFA3D1E716DDA3D000908C37 /* PlayingCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA3D1E616DD9B4100908C37 /* PlayingCardView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BFA3D1A216DD974F00908C37 /* CardViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CardViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFA3D1A516DD974F00908C37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		BFA3D1A716DD974F00908C37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		BFA3D1A916DD974F00908C37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BFA3D1AD16DD974F00908C37 /* CardViewer-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CardViewer-Info.plist"; sourceTree = "<group>"; };
+		BFA3D1AF16DD974F00908C37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BFA3D1B116DD974F00908C37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFA3D1B316DD974F00908C37 /* CardViewer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CardViewer-Prefix.pch"; sourceTree = "<group>"; };
+		BFA3D1B416DD974F00908C37 /* CardChooserAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooserAppDelegate.h; sourceTree = "<group>"; };
+		BFA3D1B516DD974F00908C37 /* CardChooserAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardChooserAppDelegate.m; sourceTree = "<group>"; };
+		BFA3D1B716DD974F00908C37 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		BFA3D1B916DD974F00908C37 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		BFA3D1BB16DD975000908C37 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		BFA3D1BE16DD975000908C37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BFA3D1C016DD975000908C37 /* CardChooserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CardChooserViewController.h; sourceTree = "<group>"; };
+		BFA3D1C116DD975000908C37 /* CardChooserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CardChooserViewController.m; sourceTree = "<group>"; };
+		BFA3D1C816DD98F900908C37 /* CardDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CardDisplayViewController.h; sourceTree = "<group>"; };
+		BFA3D1C916DD98F900908C37 /* CardDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CardDisplayViewController.m; sourceTree = "<group>"; };
+		BFA3D1CB16DD9B4100908C37 /* cardback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cardback.png; sourceTree = "<group>"; };
+		BFA3D1CD16DD9B4100908C37 /* J♠.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "J♠.jpg"; sourceTree = "<group>"; };
+		BFA3D1CE16DD9B4100908C37 /* J♠@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "J♠@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1CF16DD9B4100908C37 /* J♣.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "J♣.jpg"; sourceTree = "<group>"; };
+		BFA3D1D016DD9B4100908C37 /* J♣@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "J♣@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1D116DD9B4100908C37 /* J♥.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "J♥.jpg"; sourceTree = "<group>"; };
+		BFA3D1D216DD9B4100908C37 /* J♥@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "J♥@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1D316DD9B4100908C37 /* J♦.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "J♦.jpg"; sourceTree = "<group>"; };
+		BFA3D1D416DD9B4100908C37 /* J♦@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "J♦@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1D516DD9B4100908C37 /* K♠.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "K♠.jpg"; sourceTree = "<group>"; };
+		BFA3D1D616DD9B4100908C37 /* K♠@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "K♠@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1D716DD9B4100908C37 /* K♣.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "K♣.jpg"; sourceTree = "<group>"; };
+		BFA3D1D816DD9B4100908C37 /* K♣@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "K♣@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1D916DD9B4100908C37 /* K♥.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "K♥.jpg"; sourceTree = "<group>"; };
+		BFA3D1DA16DD9B4100908C37 /* K♥@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "K♥@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1DB16DD9B4100908C37 /* K♦.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "K♦.jpg"; sourceTree = "<group>"; };
+		BFA3D1DC16DD9B4100908C37 /* K♦@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "K♦@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1DD16DD9B4100908C37 /* Q♠.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Q♠.jpg"; sourceTree = "<group>"; };
+		BFA3D1DE16DD9B4100908C37 /* Q♠@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Q♠@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1DF16DD9B4100908C37 /* Q♣.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Q♣.jpg"; sourceTree = "<group>"; };
+		BFA3D1E016DD9B4100908C37 /* Q♣@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Q♣@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1E116DD9B4100908C37 /* Q♥.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Q♥.jpg"; sourceTree = "<group>"; };
+		BFA3D1E216DD9B4100908C37 /* Q♥@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Q♥@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1E316DD9B4100908C37 /* Q♦.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Q♦.jpg"; sourceTree = "<group>"; };
+		BFA3D1E416DD9B4100908C37 /* Q♦@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Q♦@2x.jpg"; sourceTree = "<group>"; };
+		BFA3D1E516DD9B4100908C37 /* PlayingCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayingCardView.h; sourceTree = "<group>"; };
+		BFA3D1E616DD9B4100908C37 /* PlayingCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayingCardView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BFA3D19F16DD974F00908C37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA3D1A616DD974F00908C37 /* UIKit.framework in Frameworks */,
+				BFA3D1A816DD974F00908C37 /* Foundation.framework in Frameworks */,
+				BFA3D1AA16DD974F00908C37 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BFA3D19916DD974F00908C37 = {
+			isa = PBXGroup;
+			children = (
+				BFA3D1AB16DD974F00908C37 /* CardViewer */,
+				BFA3D1A416DD974F00908C37 /* Frameworks */,
+				BFA3D1A316DD974F00908C37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BFA3D1A316DD974F00908C37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3D1A216DD974F00908C37 /* CardViewer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BFA3D1A416DD974F00908C37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3D1A516DD974F00908C37 /* UIKit.framework */,
+				BFA3D1A716DD974F00908C37 /* Foundation.framework */,
+				BFA3D1A916DD974F00908C37 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BFA3D1AB16DD974F00908C37 /* CardViewer */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3D1B416DD974F00908C37 /* CardChooserAppDelegate.h */,
+				BFA3D1B516DD974F00908C37 /* CardChooserAppDelegate.m */,
+				BFA3D1BD16DD975000908C37 /* MainStoryboard.storyboard */,
+				BFA3D1C816DD98F900908C37 /* CardDisplayViewController.h */,
+				BFA3D1C916DD98F900908C37 /* CardDisplayViewController.m */,
+				BFA3D1C016DD975000908C37 /* CardChooserViewController.h */,
+				BFA3D1C116DD975000908C37 /* CardChooserViewController.m */,
+				BFA3D1CB16DD9B4100908C37 /* cardback.png */,
+				BFA3D1CC16DD9B4100908C37 /* Face Card Images */,
+				BFA3D1E516DD9B4100908C37 /* PlayingCardView.h */,
+				BFA3D1E616DD9B4100908C37 /* PlayingCardView.m */,
+				BFA3D1AC16DD974F00908C37 /* Supporting Files */,
+			);
+			path = CardViewer;
+			sourceTree = "<group>";
+		};
+		BFA3D1AC16DD974F00908C37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3D1AD16DD974F00908C37 /* CardViewer-Info.plist */,
+				BFA3D1AE16DD974F00908C37 /* InfoPlist.strings */,
+				BFA3D1B116DD974F00908C37 /* main.m */,
+				BFA3D1B316DD974F00908C37 /* CardViewer-Prefix.pch */,
+				BFA3D1B716DD974F00908C37 /* Default.png */,
+				BFA3D1B916DD974F00908C37 /* Default@2x.png */,
+				BFA3D1BB16DD975000908C37 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BFA3D1CC16DD9B4100908C37 /* Face Card Images */ = {
+			isa = PBXGroup;
+			children = (
+				BFA3D1CD16DD9B4100908C37 /* J♠.jpg */,
+				BFA3D1CE16DD9B4100908C37 /* J♠@2x.jpg */,
+				BFA3D1CF16DD9B4100908C37 /* J♣.jpg */,
+				BFA3D1D016DD9B4100908C37 /* J♣@2x.jpg */,
+				BFA3D1D116DD9B4100908C37 /* J♥.jpg */,
+				BFA3D1D216DD9B4100908C37 /* J♥@2x.jpg */,
+				BFA3D1D316DD9B4100908C37 /* J♦.jpg */,
+				BFA3D1D416DD9B4100908C37 /* J♦@2x.jpg */,
+				BFA3D1D516DD9B4100908C37 /* K♠.jpg */,
+				BFA3D1D616DD9B4100908C37 /* K♠@2x.jpg */,
+				BFA3D1D716DD9B4100908C37 /* K♣.jpg */,
+				BFA3D1D816DD9B4100908C37 /* K♣@2x.jpg */,
+				BFA3D1D916DD9B4100908C37 /* K♥.jpg */,
+				BFA3D1DA16DD9B4100908C37 /* K♥@2x.jpg */,
+				BFA3D1DB16DD9B4100908C37 /* K♦.jpg */,
+				BFA3D1DC16DD9B4100908C37 /* K♦@2x.jpg */,
+				BFA3D1DD16DD9B4100908C37 /* Q♠.jpg */,
+				BFA3D1DE16DD9B4100908C37 /* Q♠@2x.jpg */,
+				BFA3D1DF16DD9B4100908C37 /* Q♣.jpg */,
+				BFA3D1E016DD9B4100908C37 /* Q♣@2x.jpg */,
+				BFA3D1E116DD9B4100908C37 /* Q♥.jpg */,
+				BFA3D1E216DD9B4100908C37 /* Q♥@2x.jpg */,
+				BFA3D1E316DD9B4100908C37 /* Q♦.jpg */,
+				BFA3D1E416DD9B4100908C37 /* Q♦@2x.jpg */,
+			);
+			path = "Face Card Images";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BFA3D1A116DD974F00908C37 /* CardViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BFA3D1C516DD975000908C37 /* Build configuration list for PBXNativeTarget "CardViewer" */;
+			buildPhases = (
+				BFA3D19E16DD974F00908C37 /* Sources */,
+				BFA3D19F16DD974F00908C37 /* Frameworks */,
+				BFA3D1A016DD974F00908C37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CardViewer;
+			productName = CardViewer;
+			productReference = BFA3D1A216DD974F00908C37 /* CardViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFA3D19A16DD974F00908C37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = CardChooser;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Michael Seganti";
+			};
+			buildConfigurationList = BFA3D19D16DD974F00908C37 /* Build configuration list for PBXProject "CardViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = BFA3D19916DD974F00908C37;
+			productRefGroup = BFA3D1A316DD974F00908C37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BFA3D1A116DD974F00908C37 /* CardViewer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BFA3D1A016DD974F00908C37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA3D1B016DD974F00908C37 /* InfoPlist.strings in Resources */,
+				BFA3D1B816DD974F00908C37 /* Default.png in Resources */,
+				BFA3D1BA16DD974F00908C37 /* Default@2x.png in Resources */,
+				BFA3D1BC16DD975000908C37 /* Default-568h@2x.png in Resources */,
+				BFA3D1BF16DD975000908C37 /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BFA3D19E16DD974F00908C37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BFA3D1E716DDA3D000908C37 /* PlayingCardView.m in Sources */,
+				BFA3D1B216DD974F00908C37 /* main.m in Sources */,
+				BFA3D1B616DD974F00908C37 /* CardChooserAppDelegate.m in Sources */,
+				BFA3D1C216DD975000908C37 /* CardChooserViewController.m in Sources */,
+				BFA3D1CA16DD98F900908C37 /* CardDisplayViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BFA3D1AE16DD974F00908C37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFA3D1AF16DD974F00908C37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		BFA3D1BD16DD975000908C37 /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BFA3D1BE16DD975000908C37 /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BFA3D1C316DD975000908C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BFA3D1C416DD975000908C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BFA3D1C616DD975000908C37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CardViewer/CardViewer-Prefix.pch";
+				INFOPLIST_FILE = "CardViewer/CardViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		BFA3D1C716DD975000908C37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CardViewer/CardViewer-Prefix.pch";
+				INFOPLIST_FILE = "CardViewer/CardViewer-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BFA3D19D16DD974F00908C37 /* Build configuration list for PBXProject "CardViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA3D1C316DD975000908C37 /* Debug */,
+				BFA3D1C416DD975000908C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BFA3D1C516DD975000908C37 /* Build configuration list for PBXNativeTarget "CardViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BFA3D1C616DD975000908C37 /* Debug */,
+				BFA3D1C716DD975000908C37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFA3D19A16DD974F00908C37 /* Project object */;
+}
