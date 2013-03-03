@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF0561D916E3A1EE007933CB /* iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF0561D816E3A1EE007933CB /* iPad.storyboard */; };
+		BF0561DC16E3A244007933CB /* AttributedStringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0561DB16E3A244007933CB /* AttributedStringViewController.m */; };
 		BF7BB98116E2740E007C365E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7BB98016E2740E007C365E /* UIKit.framework */; };
 		BF7BB98316E2740E007C365E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7BB98216E2740E007C365E /* Foundation.framework */; };
 		BF7BB98516E2740E007C365E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF7BB98416E2740E007C365E /* CoreGraphics.framework */; };
@@ -24,10 +26,13 @@
 		BF7BB9B616E27491007C365E /* FlickrFetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = BF7BB9B516E27491007C365E /* FlickrFetcher.m */; };
 		BF7BB9B816E274A1007C365E /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7BB9B716E274A1007C365E /* star.png */; };
 		BF7BB9BA16E274AC007C365E /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = BF7BB9B916E274AC007C365E /* camera.png */; };
-		BF7BB9BC16E274CF007C365E /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7BB9BB16E274CF007C365E /* MainStoryboard.storyboard */; };
+		BF7BB9BC16E274CF007C365E /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7BB9BB16E274CF007C365E /* iPhone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BF0561D816E3A1EE007933CB /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
+		BF0561DA16E3A244007933CB /* AttributedStringViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AttributedStringViewController.h; sourceTree = "<group>"; };
+		BF0561DB16E3A244007933CB /* AttributedStringViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AttributedStringViewController.m; sourceTree = "<group>"; };
 		BF7BB97D16E2740E007C365E /* FastSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FastSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF7BB98016E2740E007C365E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BF7BB98216E2740E007C365E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -56,7 +61,7 @@
 		BF7BB9B516E27491007C365E /* FlickrFetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlickrFetcher.m; sourceTree = "<group>"; };
 		BF7BB9B716E274A1007C365E /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		BF7BB9B916E274AC007C365E /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
-		BF7BB9BB16E274CF007C365E /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		BF7BB9BB16E274CF007C365E /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +108,8 @@
 		BF7BB98616E2740E007C365E /* FastSpot */ = {
 			isa = PBXGroup;
 			children = (
-				BF7BB9BB16E274CF007C365E /* MainStoryboard.storyboard */,
+				BF7BB9BB16E274CF007C365E /* iPhone.storyboard */,
+				BF0561D816E3A1EE007933CB /* iPad.storyboard */,
 				BF7BB9A316E2744B007C365E /* RecentPhotoTVC.h */,
 				BF7BB9A416E2744B007C365E /* RecentPhotoTVC.m */,
 				BF7BB9A616E2747F007C365E /* FlickrPhotoTagTVC.h */,
@@ -114,6 +120,8 @@
 				BF7BB9AB16E2747F007C365E /* ImageViewController.m */,
 				BF7BB9AC16E2747F007C365E /* StanfordFlickrPhotosTVC.h */,
 				BF7BB9AD16E2747F007C365E /* StanfordFlickrPhotosTVC.m */,
+				BF0561DA16E3A244007933CB /* AttributedStringViewController.h */,
+				BF0561DB16E3A244007933CB /* AttributedStringViewController.m */,
 				BF7BB9B216E27491007C365E /* FlickrFetcher */,
 				BF7BB98716E2740E007C365E /* Supporting Files */,
 			);
@@ -205,7 +213,8 @@
 				BF7BB99716E2740E007C365E /* Default-568h@2x.png in Resources */,
 				BF7BB9B816E274A1007C365E /* star.png in Resources */,
 				BF7BB9BA16E274AC007C365E /* camera.png in Resources */,
-				BF7BB9BC16E274CF007C365E /* MainStoryboard.storyboard in Resources */,
+				BF7BB9BC16E274CF007C365E /* iPhone.storyboard in Resources */,
+				BF0561D916E3A1EE007933CB /* iPad.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +233,7 @@
 				BF7BB9B016E2747F007C365E /* ImageViewController.m in Sources */,
 				BF7BB9B116E2747F007C365E /* StanfordFlickrPhotosTVC.m in Sources */,
 				BF7BB9B616E27491007C365E /* FlickrFetcher.m in Sources */,
+				BF0561DC16E3A244007933CB /* AttributedStringViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,7 +313,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FastSpot/FastSpot-Prefix.pch";
 				INFOPLIST_FILE = "FastSpot/FastSpot-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -314,7 +326,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FastSpot/FastSpot-Prefix.pch";
 				INFOPLIST_FILE = "FastSpot/FastSpot-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -338,6 +352,7 @@
 				BF7BB9A216E2740E007C365E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

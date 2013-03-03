@@ -10,7 +10,7 @@
 #import "FlickrPhotoTVC.h"
 #import "FlickrFetcher.h"
 
-@interface FlickrPhotoTVC ()
+@interface FlickrPhotoTVC () <UISplitViewControllerDelegate>
 
 @end
 
@@ -47,6 +47,19 @@
     [defaults synchronize];
     
 }
+
+#pragma mark - UISplitViewControllerDelegate
+
+- (void)awakeFromNib
+{
+    self.splitViewController.delegate = self;
+}
+
+- (BOOL)splitViewController:(UISplitViewController *)svc shouldHideViewController:(UIViewController *)vc inOrientation:(UIInterfaceOrientation)orientation
+{
+    return NO;
+}
+
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {

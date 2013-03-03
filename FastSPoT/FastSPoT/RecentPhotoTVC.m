@@ -14,9 +14,17 @@
 
 @implementation RecentPhotoTVC
 
+/*
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    NSMutableOrderedSet *recentPhotos = [NSMutableOrderedSet orderedSetWithArray:[[NSUserDefaults standardUserDefaults] objectForKey:RECENTLY_VIEWED_PHOTOS]];
+    self.photos = [[recentPhotos reversedOrderedSet] array];
+}
+*/
+
+-(void)viewWillAppear:(BOOL)animated
+{
     NSMutableOrderedSet *recentPhotos = [NSMutableOrderedSet orderedSetWithArray:[[NSUserDefaults standardUserDefaults] objectForKey:RECENTLY_VIEWED_PHOTOS]];
     self.photos = [[recentPhotos reversedOrderedSet] array];
 }
