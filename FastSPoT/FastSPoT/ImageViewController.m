@@ -8,6 +8,7 @@
 
 #import "ImageViewController.h"
 #import "AttributedStringViewController.h"
+#import "CacheNSData.h"
 
 @interface ImageViewController () <UIScrollViewDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
@@ -81,10 +82,21 @@
         
         // dispatch the code onto the queue
         dispatch_async(imageFetchQ, ^{
-            // The Network indicator is global, be mindful of other threads setting it
-            [UIApplication sharedApplication].networkActivityIndicatorVisible = YES; // Start the network indicater spinning wheel! -- Baaad
-            NSData *imageData = [[NSData alloc] initWithContentsOfURL:self.imageURL];
-            [UIApplication sharedApplication].networkActivityIndicatorVisible = NO; // Stop the network indicater spinning wheel! -- Baaad
+            // Check to see if the file is in the cache
+            NSString *fileName = [[self.imageURL pathComponents] lastObject];                       // get the filename
+            NSData *imageData = [[CacheNSData sharedInstance] dataInCacheForIdentifier:fileName];   // Query the Cache
+            
+            if (!imageData){    // Not found in the cache, go get it off the Net... 
+
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = YES; // Start the network indicater spinning wheel! -- Baaad
+                imageData = [[NSData alloc] initWithContentsOfURL:self.imageURL];
+                [UIApplication sharedApplication].networkActivityIndicatorVisible = NO; // Stop the network indicater spinning wheel! -- Baaad
+                
+                dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_LOW, 0), ^{        // Save this to cache in the background
+                    [[CacheNSData sharedInstance] cacheData:imageData withIdentifier:fileName];
+                });
+            }
+            
             UIImage *image = [[UIImage alloc] initWithData:imageData];
             
             if (self.imageURL == imageURL){ // Has imageURL changed while we were on the Queue?
