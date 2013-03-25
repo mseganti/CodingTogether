@@ -19,10 +19,20 @@
                                             <segue destination="Oq6-Ld-jcO" kind="modal" identifier="Ask" modalPresentationStyle="fullScreen" modalTransitionStyle="partialCurl" id="qT9-xx-W50"/>
                                         </connections>
                                     </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="B42-gC-Rnf"/>
+                                    <barButtonItem title="Control Sink" id="Lta-NX-RYT">
+                                        <connections>
+                                            <action selector="controlSink:" destination="2" id="pfO-pU-ggC"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SYY-YX-kay">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="aB9-f7-ltH" appends="YES" id="Ud4-u8-Uy5"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -36,8 +46,16 @@
                             <constraint firstItem="OtP-s0-Bjw" firstAttribute="leading" secondItem="5" secondAttribute="leading" type="default" id="zjk-g9-QAv"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="kitchenSink" destination="SYY-YX-kay" id="lpW-BC-gu8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="aB9-f7-ltH">
+                    <connections>
+                        <action selector="tap:" destination="2" id="Yt6-jX-Seh"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-112" y="-49"/>
         </scene>
@@ -113,28 +131,6 @@
             <point key="canvasLocation" x="812" y="-49"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="AskerViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/AskerViewController.h"/>
-            <relationships>
-                <relationship kind="outlet" name="answerTextField" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="questionLabel" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-        <class className="KitchenSinkViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/KitchenSinkViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="cancelAsking:" candidateClass="UIStoryboardSegue"/>
-                <relationship kind="action" name="doneAsking:" candidateClass="UIStoryboardSegue"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="UIStoryboardSegue" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UIStoryboardSegue.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
